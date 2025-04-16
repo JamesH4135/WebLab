@@ -1,0 +1,9 @@
+---
+title: Journal
+home: /welcome.md
+library: /home/james/Journal
+favicon: /page/icons/galaxy.png
+hostname: 127.0.0.1
+port: 8080
+...
+

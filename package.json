@@ -1,0 +1,27 @@
+{
+  "name": "weblab",
+  "version": "1.0.0",
+  "description": "Interactive Web Journal",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesH4135/WebLab.git"
+  },
+  "keywords": [
+    "markdown",
+    "node.js"
+  ],
+  "author": "James Houck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesH4135/WebLab/issues"
+  },
+  "homepage": "https://github.com/JamesH4135/WebLab#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
