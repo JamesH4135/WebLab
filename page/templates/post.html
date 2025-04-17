@@ -1,0 +1,33 @@
+<!-- post -->
+{{#page.title}}
+<h2 class="has-text-centered title is-2">{{page.title}}</h2>
+{{/page.title}}
+
+{{#page.subtitle}}
+<h3 class="has-text-centered subtitle is-3">{{page.subtitle}}</h3>
+{{/page.subtitle}}
+
+{{#page.author}}
+<h4 class="has-text-centered is-4">{{page.author}}</h4>
+{{/page.author}}
+
+<nav class="level is-mobile">
+  <div class="level-left">
+    <h5 class="level-item is-5">{{page.date}}</h5>
+  </div>
+  <div class="level-right">
+    <h5 class="level-item is-5">{{page.category}}</h5>
+  </div>
+</nav>
+
+{{{body}}}
+
+<br>
+<nav class="level">
+  {{#page.navigation}}
+  <div class="level-item has-text-centered">
+    <a href="{{path}}" class="button is-link is-outlined">{{link}}</a>
+  </div>
+  {{/page.navigation}}
+</nav>
+

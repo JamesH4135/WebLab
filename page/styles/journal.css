@@ -1,0 +1,51 @@
+@font-face {
+  font-family: NotoSerif;
+  src: url(./fonts/NotoSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: SBL_Hebrew;
+  src: url(./fonts/SBL_Hebrew.ttf);
+}
+
+@font-face {
+  font-family: SBL_Greek;
+  src: url(./fonts/SBL_Greek.ttf);
+}
+
+:lang(he) {
+  font-family: SBL_Hebrew;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+:lang(el) {
+  font-family: SBL_Greek;
+  font-size: 1.2em;
+}
+
+.noto-serif { font-family: NotoSerif; }
+
+img {
+  max-height: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+.content figure {
+  margin-left: 0em;
+  margin-right: 0em;
+}
+
+.content figure:not(:first-child) {
+  margin-top: 0em;
+}
+
+.sc {
+  font-variant: small-caps;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+

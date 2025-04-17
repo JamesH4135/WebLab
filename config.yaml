@@ -1,6 +1,9 @@
 ---
 title: Journal
-home: /welcome.md
+home: /welcome
+navbar:
+- link: Welcome
+  path: /welcome
 library: /home/james/Journal
 favicon: /page/icons/galaxy.png
 hostname: 127.0.0.1

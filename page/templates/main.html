@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+  - WebLab Theme
+  - Copyright 2025 James H. Houck. All rights reserved.
+  -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{site.title}}</title>
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/node_modules/katex/dist/katex.min.css">
+    <link rel="stylesheet" href="/page/styles/journal.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar is-dark" role="navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#"><img src="{{site.favicon}}"></a>
+        <a id="burger" class="navbar-burger burger" data-target="navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+        {{#site.navbar}}
+          <a class="navbar-item" href="{{path}}">{{link}}</a>
+        {{/site.navbar}}
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="columns is-centered">
+        <div class="column is-half-desktop">
+          <div class="content noto-serif is-size-5">{{> page}}</div>
+        </div>
+      </div>
+    </section>
+    <!-- Application Scripts -->
+    <script src="/node_modules/katex/dist/katex.min.js"></script>
+    <script src="/node_modules/katex/dist/contrib/auto-render.min.js"></script>
+    <script src="/page/scripts/components.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,30 @@
+<!-- article -->
+<h1 class="has-text-centered title is-1">{{page.title}}</h1>
+
+{{#page.subtitle}}
+<h2 class="has-text-centered subtitle is-2">{{page.subtitle}}</h2>
+{{/page.subtitle}}
+
+{{#page.author}}
+<h3 class="has-text-centered is-3">{{page.author}}</h3>
+{{/page.author}}
+
+{{#page.date}}
+<h3 class="has-text-centered is-3">{{page.date}}</h3>
+{{/page.date}}
+
+{{#page.abstract}}
+<p class="has-text-centered">{{page.abstract}}</p>
+{{/page.abstract}}
+
+{{{body}}}
+
+<br>
+<nav class="level">
+  {{#page.navigation}}
+  <div class="level-item has-text-centered">
+    <a href="{{path}}" class="button is-link is-outlined">{{link}}</a>
+  </div>
+  {{/page.navigation}}
+</nav>
+
